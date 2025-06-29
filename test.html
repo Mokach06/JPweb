@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="header">
+        <img src="candy_.png" alt="avatar">
+    </div>
+
+    <div class="main">
+        <div class="title">今はx月x日X時X分です。</div>
+        <div class="container">
+            <div class="box">全部</div>  
+            <div class="box">月份</div>
+            <div class="box">日期</div>
+            <div class="box">小時</div>
+            <div class="box">分鐘</div>
+            <div class="box">自訂</div>
+        </div>
+    </div>
+    <script>
+        var button = document.getElementsByClassName("box");
+        for(let i=0; i < button.length; i++) {
+            button[i].onmouseover = function() {
+                this.style.backgroundColor = "rgb(40,40,40)";
+            }
+            button[i].onmouseout = function() {
+                this.style.backgroundColor = "rgb(50,50,50)";
+            }
+        }
+        var Links = [ "all.html","month.html","date.html","hour.html","minute.html","custom.html"];
+        for(let i=0; i < button.length; i++) {
+            button[i].onclick = function() {
+                window.location.href = Links[i];
+            }
+        }
+    </script>
+</body>
+</html>

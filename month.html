@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>month</title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="candy_.png" alt="avater">
+        </div>
+        <div class="main">
+            <div class="title">月份</div>
+            <div class="content">一月 - いちがつ (ichigatsu)</div>
+            <div class="content">二月 - にがつ (nigatsu)</div>
+            <div class="content">三月 - さんがつ (sangatsu)</div>
+            <div class="content">四月 - しがつ (shigatsu)</div>
+            <div class="content">五月 - ごがつ (gogatsu)</div>
+            <div class="content">六月 - ろくがつ (rokugatsu)</div>
+            <div class="content">七月 - しちがつ (shichigatsu)</div>
+            <div class="content">八月 - はちがつ (hachigatsu)</div>
+            <div class="content">九月 - くがつ (kugatsu)</div>
+            <div class="content">十月 - じゅうがつ (juugatsu)</div>
+            <div class="content">十一月 - じゅういちがつ (juuichigatsu)</div>
+            <div class="back">返回</div>
+        </div>
+        <script>
+            var back = document.getElementsByClassName("back")[0];
+            back.onmouseover = function() {
+                back.style.backgroundColor = "rgb(40,40,40)";
+            }
+            back.onmouseout = function() {
+                back.style.backgroundColor = "rgb(50,50,50)";
+            }
+            back.onclick = function() {
+                window.location.href = "test.html";
+            }
+        </script>
+    </body>
+</html>
